@@ -1,0 +1,81 @@
+
+
+:root{
+--navbar-height: 56px;
+--footer-height: 72px;
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    background: rgb(230, 237, 238);
+}
+.custom-bs-navbar{
+    background: white;
+    height: var(--navbar-height);
+}
+
+
+.my-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: var(--footer-height);
+    background: #092a69;
+    padding: 24px 24px;
+}
+
+.my-footer address{
+    color: white;
+    margin: auto;
+}
+
+.content-section{
+    min-height: calc(100% - var(--navbar-height) - var(--footer-height)); /* Ini biat tingginya menyesuaikan sama si barnya ga transparan */
+}
+
+.carousel-item {
+    margin: 50px; 
+}
+
+.carousel {
+    padding: 50px; /* Menambahkan padding di luar carousel */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Jarak antar item */
+    padding: 10px; /* Jarak dari tepi */
+}
+
+.gallery-item {
+    overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari batas */
+    border: 1px solid #ccc; /* Border untuk setiap item */
+    height: 150px; /*Untuk menyamakan ukuran gambar pada grid */
+}
+
+.gallery-item img {
+    width: 100%; /* Memastikan gambar memenuhi lebar item */
+    height: auto; /* Memastikan gambar responsif */
+    transition: transform 0.3s; /* Efek transisi */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Zoom pas diarah kursor */
+}
+
+.img{
+    padding: 30px 30px;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+}

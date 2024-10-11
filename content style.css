@@ -1,0 +1,73 @@
+/* ini cara 1*/
+@import "./content-style.css";
+.img-wrap{
+height: 150px;
+width: 150px;
+overflow: hidden;
+}
+.img.img-wrap > img{
+    width: 100%;
+}
+
+/* ini cara 2 */
+.download{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.social-list > .social-item > a{
+    border: 1px solid gray;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.social-list > .social-item > a > i{
+    margin-right: 8px;
+}
+
+.social-list > .social-item:first-child > a{
+    background: #3b579d;
+}
+
+.social-list > .social-item:first-child > a{ 
+    color:#ffff;
+}
+
+.social-list > .social-item:nth-child(2) > a{
+    background: linear-gradient(32deg, #f1ad00, #ff1131, #fd01c7);
+    color: white;
+}
+.social-list > .social-item:last-child > a{
+    background: white;
+    color: 212.61deg 63.3% 42.75%;
+}
+
+
+.media-list{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.media-list > .media-item i{
+    font-size: 50px;
+    text-decoration: none;
+    display: flex;
+    color: #063b77;
+    justify-content: center;
+    align-items: center;
+}
